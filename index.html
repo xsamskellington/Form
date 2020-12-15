@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Adoption Form</title>
+
+    <link href="index.css" rel="stylesheet" tyoe="text/css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+    <header>
+        <h1 id="title">♥ ADOPTION APLICATION FORM ♥</h1>
+         <p id="description">Thank you for your interest in adopting a cat!</p>
+    </header>
+
+
+    <form id="survey-form">
+
+        <div>
+            <label for="name" id="name-label">Name</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+            <label for="email" id="email-label">E-mail</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required> 
+        </div>
+
+        <div>
+            <label for="number" id="number-label">Age (optional)</label>
+            <br>
+            <input type="number" name="age" id="number" placeholder="Enter your age" min="15" max="90">
+        </div>
+
+        <div>
+            <label for="kind" >What kind of cat are you looking for?</label>
+            <br>
+            <select name="kind" id="dropdown">
+
+                <option value=""></option>
+                <option value="baby">Baby cat</option>
+                <option value="young">Young cat</option>
+                <option value="adult">Adult cat</option>
+                <option value="senior">Senior cat</option>
+                <option value="companion"> Companion for another pet</option>
+                <option value="anyone"> Any cat it's ok</option>
+
+            </select>
+        </div>
+
+        <div>
+            <p>What sex are you looking for your cat?</p>
+
+            <input type="radio" id="male" name="sex" value="male">
+            <label for="male">Male cat</label>
+
+            <input type="radio" id="female" name="sex" value="female">
+            <label for="female">Female cat</label>
+
+            <br>
+
+            <input type="radio" id="other" name="sex" value="other" checked>
+            <label for="other">I don't mind about the sex of the cat</label>            
+        </div>
+
+        <div>
+            <p>Do you have any of the following? <br> <span class="check">Check all that apply.</span></p>
+
+             <input type="checkbox" id="patio" name="exterior" value="patio">
+            <label for="patio">Patio</label>
+
+            <input type="checkbox" id="balcony" name="exterior" value="balcony">
+            <label for="balcony">Balcony</label>
+
+            <input type="checkbox" id="pet-door" name="exterior" value="pet-door">
+            <label for="pet-door">Pet Door</label>
+
+
+            <br>
+
+            <input type="checkbox" id="backyard" name="exterior" value="backyard">
+            <label for="backyard">Backyard</label>
+
+            <input type="checkbox" id="windows" name="exterior" value="windows">
+            <label for="windows">Unscreened windows</label>
+
+            <br>
+
+            <input type="checkbox" id="none" name="exterior" value="none">
+            <label for="none">I don't have any of this</label>
+
+        </div>
+
+        <div>
+            <p>Why do you want to adopt a cat? ♥</p>
+            <textarea rows="15" cols="60" name="comment" class="textarea">Tell us why are you looking for a new partner in life </textarea>
+        </div>
+
+        <div>
+            <button type='submit' id='submit'>S E N D ! </button>
+        </div>
+
+    </form>
+
+</main>
+</body>
+</html>
